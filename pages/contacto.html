@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon2.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <title>IT MOTION®</title>
+</head>
+<body>
+    <!-- Inicio Header: Logo, marca y menu navegable -->
+    <header class="header">
+        <a href="../index.html"> <img class="logo" src="../assets/images/android-chrome-192x192.png"></a>
+        <h1>
+            IT MOTION®
+        </h1>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./soluciones.html">Soluciones</a> 
+                </li>
+                <li>
+                    <a href="./tecnologias.html">Tecnologías</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./empleo.html">Empleo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Form de contacto-->
+        <h2>
+            Contactanos
+        </h2>
+        <form action="" >
+            <fieldset>
+                <legend>* Campos requeridos</legend>
+                <div>
+                    <label for="motivo">Motivo de tu consulta</label>
+                    <input type="radio" name="motivo" value="Consulta">Consulta
+                    <input type="radio" name="motivo" value="empleo">Aplicar empleo
+                </div>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="Nombre" placeholder="Nombre*..." required>
+                </div>
+                <div>
+                    <label for="apellido"></label>
+                    <input type="text" name="apellido" placeholder="Apellido*..." required>
+                </div>
+                <div>
+                    <label for="mail"></label>
+                    <input type="email" name="email" placeholder="Email*..." required>
+                </div>
+                <div>
+                    <label for="compania"></label>
+                    <input type="compania" name="compania" placeholder="Companía...">
+                </div>
+                <div>
+                    <label for="pais">País</label>
+                    <select name="pais" id="">
+                        <option value="arg">Argentina</option>
+                        <option value="uru">Brazil</option>
+                        <option value="uru">Chile</option>
+                        <option value="uru">Paraguay</option>
+                        <option value="uru">Perú</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="uru">Otros</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="Comentarios"></label>
+                    <br>
+                    <textarea name="coment" placeholder="Observaciones..." id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <p>Adjunta tu CV / Portfolio</p>
+                    <input type="file">
+                </div>             
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar campos">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <!--Inicio Footer: 2 secciones: Datos Empresa y redes sociales -->
+        <div>
+            <ul>
+                <li>CABA</li>
+                <li>Balcarce 2xx</li>
+                <li>C1064AAF</li>
+                <li>CABA</li>
+                <li>+549 434 35657</li>
+                <li>info@itmotion.com.ar</li>
+            </ul>
+        </div>
+        <div>
+            <!-- Redes Sociales-->
+            <a class="redes" href="https://www.facebook.com" target="_blank"><img width="48px" src="../assets/images/facebook.png" alt=""></a>
+            <a class="redes" href="https://www.linkedin.com/" target="_blank"><img width="48px" src="../assets/images/linkedin.png" alt=""></a>
+            <a class="redes" href="https://www.instagram.com/" target="_blank"><img width="48px" src="../assets/images/instagram.png" alt=""></a>
+            <a class="redes" href="https://twitter.com/" target="_blank"><img width="48px" src="../assets/images/twitter.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

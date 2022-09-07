@@ -1,0 +1,138 @@
+/* reseteo CSS */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #131335;
+  border-bottom: solid white 2px;
+  align-content: space-between;
+}
+.logo{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  width: 64px;
+}
+h1{
+  color: white;
+  display: inline;
+  align-self: center;
+}
+/* menu navegacion */
+nav{
+  padding: 1rem;
+  display: inline;
+  position: right;
+}
+nav ul{
+  list-style: none;
+  height: 80px;
+}
+.menu{
+  display: inline;
+  list-style-type: none;
+  align-content: space-between;
+  margin: 10px;
+}
+.menu li{
+  display: inline-block;
+  text-align:center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #5b6bea;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+}
+.menu li a:hover{
+color: yellow;
+text-decoration: underline;
+}
+/* fin menu navegacion */
+h2{
+  margin: 2rem;
+}
+body{
+background-image: url(../assets/images/3430013.jpg);
+background-repeat: no-repeat;
+background-position: right center;
+/* esto para que la imagen cubra justo la pantalla */
+background-size: cover;
+}
+main{
+  color: white;
+}
+.imagenSoluciones{
+  margin-left: 2rem;
+  display: inline-block;
+  border: solid white;
+  width: 45%;
+
+}
+p{
+  margin:2rem;
+  font-size: 20px;
+  line-height: 2rem;
+  font-style: italic;
+}
+form{
+  font-size: large;
+  margin: 2rem;
+  left: 10%;
+}
+/* ------- SOluciones ------*/
+.pSoluciones{
+  margin:2rem;
+  font-size: 20px;
+  line-height: 2rem;
+  font-style: italic;
+  width: 40%;
+  display: inline-block;
+}
+.conocer{
+  color: white;
+  margin-left: 2rem;
+  padding: 10px;
+  text-decoration: underline;
+  display: inline-block;
+}
+.conocer:hover{
+  color: yellow;
+  background-color: #131335;
+}
+/* ---- Tecnologias -------*/
+.tecnotitle{
+  text-align: center;
+  font-size: 24px ;
+  margin: 2rem;
+}
+.tecnologias{
+  width: 80%;
+}
+.tecnologias img{
+  width: 48px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+/******** footer *********/
+footer{
+  border-top: solid white 2px;
+}
+footer ul{
+  list-style: none;
+  color: white;
+  padding: 1rem;
+}
+.redes{
+  position: relative;
+  left: 40%;
+  padding: 1rem;
+  width: 48px;
+}
