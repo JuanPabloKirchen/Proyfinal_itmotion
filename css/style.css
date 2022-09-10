@@ -69,6 +69,8 @@ h2{
 }
 body{
 background-image: url(../assets/images/3430013.jpg);
+/* por si la imagen no carga*/
+background-color: #131335;
 background-repeat: no-repeat;
 background-position: right center;
 /* esto para que la imagen cubra justo la pantalla */
@@ -138,12 +140,14 @@ form{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 footer ul{
   list-style: none;
   color: white;
   padding: 2rem;
+}
+footer ul li{
+  padding: 0.3rem;
 }
 .redes{
   width: 48px;
