@@ -87,17 +87,11 @@ p{
   line-height: 2rem;
   font-style: italic;
 }
-form{
-  font-size: large;
-  margin: 2rem;
-  left: 10%;
-}
 /* ------- SOluciones ------*/
 .solucionesMain{
   grid-area: main;
   color: white;
 }
-
 .pSoluciones{
   margin:2rem;
   font-size: 20px;
@@ -124,6 +118,10 @@ form{
   background-color: #131335;
 }
 /* ---- Tecnologias -------*/
+.tecnologiasMain{
+  grid-area: main;
+  color: white;
+}
 .tecnotitle{
   text-align: center;
   font-size: 24px ;
@@ -137,6 +135,35 @@ form{
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
+}
+/** Contacto **/
+.contactoMain{
+  grid-area: main;
+  color: white;
+}
+.form{
+  font-size: large;
+  margin: 2rem;
+  left: 10%;
+}
+/** Empleo **/
+.empleoMain{
+  grid-area: main;
+  color: white;
+  margin:2rem;
+}
+.empleoMain h2{
+  text-align: center;
+}
+.empleoMain h3{
+  margin: 2rem;
+}
+.empleoMain h4{
+  margin: 2rem;
+}
+.empleoMain ul{
+  list-style: none;
+  margin: 2rem;
 }
 /******** footer *********/
 .footer{
