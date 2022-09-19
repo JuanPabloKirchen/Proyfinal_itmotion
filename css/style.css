@@ -6,12 +6,12 @@
 }
 .indexContenedor{
   display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.3fr 1fr 0.5fr;
 	grid-template-areas: 
-    "header"
-		"main"
-		"footer";
+    "header header"
+		"main main"
+		"footer footer";
 }
 .header{
   grid-area: header;
@@ -76,16 +76,10 @@ background-position: right center;
 /* esto para que la imagen cubra justo la pantalla */
 background-size: cover;
 }
+/** Index **/
 .indexMain{
   grid-area: main;
   color: white;
-}
-.imagenSoluciones{
-  margin-left: 2rem;
-  display: inline-block;
-  border: solid white;
-  width: 45%;
-
 }
 p{
   margin:2rem;
@@ -99,6 +93,11 @@ form{
   left: 10%;
 }
 /* ------- SOluciones ------*/
+.solucionesMain{
+  grid-area: main;
+  color: white;
+}
+
 .pSoluciones{
   margin:2rem;
   font-size: 20px;
@@ -106,6 +105,12 @@ form{
   font-style: italic;
   width: 40%;
   display: inline-block;
+}
+.imagenSoluciones{
+  margin-left: 2rem;
+  display: inline-block;
+  border: solid white;
+  width: 45%;
 }
 .conocer{
   color: white;
