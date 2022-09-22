@@ -30,32 +30,6 @@ h1{
   display: inline;
   align-self: center;
 }
-nav{
-  padding: 1rem;
-  display: inline;
-  position: right;
-}
-nav ul{
-  list-style: none;
-  height: 80px;
-}
-.menu{
-  display: inline;
-  list-style-type: none;
-  align-content: space-between;
-  margin: 10px;
-}
-.menu li{
-  display: inline-block;
-  text-align:center;
-  margin: 20px;
-  padding: 10px;
-  background-color: #5b6bea;
-}
-.menu li a{
-  text-decoration: none;
-  color: white;
-}
 .menu li a:hover{
 color: yellow;
 text-decoration: underline;
@@ -84,7 +58,7 @@ p{
   line-height: 2rem;
   font-style: italic;
 }
-/* ------- SOluciones ------*/
+/* ------- Soluciones ------*/
 .solucionesMain{
   grid-area: main;
   color: white;
