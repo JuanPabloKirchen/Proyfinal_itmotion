@@ -52,55 +52,46 @@
         <h2>
             Contactanos
         </h2>
-        <form class="form" action="" >
-            <fieldset>
-                <legend>* Campos requeridos</legend>
-                <div>
-                    <label for="motivo">Motivo de tu consulta</label>
-                    <input type="radio" name="motivo" value="Consulta">Consulta
-                    <input type="radio" name="motivo" value="empleo">Aplicar empleo
-                </div>
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="Nombre" placeholder="Nombre*..." required>
-                </div>
-                <div>
-                    <label for="apellido"></label>
-                    <input type="text" name="apellido" placeholder="Apellido*..." required>
-                </div>
-                <div>
-                    <label for="mail"></label>
-                    <input type="email" name="email" placeholder="Email*..." required>
-                </div>
-                <div>
-                    <label for="compania"></label>
-                    <input type="compania" name="compania" placeholder="Companía...">
-                </div>
-                <div>
-                    <label for="pais">País</label>
-                    <select name="pais" id="">
-                        <option value="arg">Argentina</option>
-                        <option value="uru">Brazil</option>
-                        <option value="uru">Chile</option>
-                        <option value="uru">Paraguay</option>
-                        <option value="uru">Perú</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="uru">Otros</option>
-                    </select>   
-                </div>
-                <div>
-                    <label for="Comentarios"></label>
-                    <br>
-                    <textarea name="coment" placeholder="Observaciones..." id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <p>Adjunta tu CV / Portfolio</p>
-                    <input type="file">
-                </div>             
-                <input type="submit" value="Enviar datos">
-                <input type="reset" value="Borrar campos">
-            </fieldset>
-        </form>
+        <form>
+            <div class="form-group p-3">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Introducir email">
+                <small id="emailHelp" class="form-text text-muted">Dato obligatorio.</small>
+            </div>
+            <div class="form-group p-3">
+                <label for="inputNombre">Nombre completo</label>
+                <input type="string" class="form-control" id="inputNombre" aria-describedby="emailHelp" placeholder="Introducir nombre">
+                <small id="emailHelp" class="form-text text-muted">Dato obligatorio.</small>
+            </div>
+            <div class="form-group p-3">
+                <label for="inputCompania">Compañía</label>
+                <input type="password" class="form-control" id="inputCompania" placeholder="Compañía">
+            </div>
+            <div class="form-group p-3">
+                <label for="inputPais">Seleccione País</label>
+                <select class="form-control" id="inputPais">
+                  <option>Argentina</option>
+                  <option>Brasil</option>
+                  <option>Colombia</option>
+                  <option>Chile</option>
+                  <option>Ecuador</option>
+                  <option>Paraguay</option>
+                  <option>Perú</option>
+                  <option>Uruguay</option>
+                  <option>Venezuela</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+              <div class="form-group p-3 m-2">
+                <label for="inputConsulta">Motivo de consulta</label>
+                <textarea class="form-control" id="inputConsulta" rows="4">Ingrese su consulta aquí</textarea>
+              </div>
+              <div class="form-group p-3">
+                <label for="inputFile">Adjunta tu CV</label>
+                <input type="file" class="form-control-file" id="inputFile">
+              </div>
+            <button type="submit" class="btn btn-primary p-3 mb-5">Enviar</button>
+          </form>
     </main>
     <footer class="footer">
         <!--Inicio Footer: 2 secciones: Datos Empresa y redes sociales -->

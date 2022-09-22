@@ -35,9 +35,6 @@ color: yellow;
 text-decoration: underline;
 }
 /* fin menu navegacion */
-h2{
-  margin: 2rem;
-}
 body{
 background-image: url(../assets/images/3430013.jpg);
 /* por si la imagen no carga*/
@@ -52,7 +49,10 @@ background-size: cover;
   grid-area: main;
   color: white;
 }
-p{
+.indexMain h2{
+  margin: 2rem;
+}
+.indexMain p{
   margin:2rem;
   font-size: 20px;
   line-height: 2rem;
@@ -124,12 +124,13 @@ p{
 /** Contacto **/
 .contactoMain{
   grid-area: main;
+  width: 90%;
   color: white;
-}
-.form{
   font-size: large;
-  margin: 2rem;
-  left: 10%;
+}
+.contactoMain h2{
+  text-align: center;
+  margin-top: 2rem;
 }
 /** Empleo **/
 .empleoMain{
@@ -165,6 +166,11 @@ footer ul{
 }
 footer ul li{
   padding: 0.3rem;
+}
+/** quiero resetear color texto mail, todavia no me sale **/
+footer div ul li a:active{ 
+  text-decoration: none; 
+  color: white;
 }
 .redes{
   width: 48px;
