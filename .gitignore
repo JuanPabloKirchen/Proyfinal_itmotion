@@ -1,0 +1,4 @@
+# excluyendo carpeta node_modules
+node_modules/
+# excluyo backup de css antes de sass
+style_backup

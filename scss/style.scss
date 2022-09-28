@@ -1,0 +1,137 @@
+/* reseteo CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .indexContenedor{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr 0.5fr;
+      grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+
+  }
+  @import "header";
+    
+  @import "footer";
+  body{
+  background-image: url(../assets/images/3430013.jpg);
+  /* por si la imagen no carga*/
+  background-color: #131335;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* esto para que la imagen cubra justo la pantalla */
+  background-size: cover;
+  }
+  /** Index **/
+  .indexMain{
+    grid-area: main;
+    color: white;
+  }
+  .indexMain h2{
+    margin: 2rem;
+  }
+  .indexMain p{
+    margin:2rem;
+    font-size: 20px;
+    line-height: 2rem;
+    font-style: italic;
+  }
+  /* ------- Soluciones ------*/
+  .solucionesMain{
+    grid-area: main;
+    color: white;
+  }
+  .pSoluciones{
+    margin:2rem;
+    font-size: 20px;
+    line-height: 2rem;
+    font-style: italic;
+    width: 40%;
+    display: inline-block;
+  }
+  .imagenSoluciones{
+    margin-left: 2rem;
+    display: inline-block;
+    border: solid white;
+    width: 45%;
+  }
+  .conocer{
+    color: white;
+    margin-left: 2rem;
+    padding: 10px;
+    text-decoration: underline;
+    display: inline-block;
+  }
+  .conocer:hover{
+    color: yellow;
+    background-color: #131335;
+  }
+  /* ---- Tecnologias -------*/
+  .tecnologiasMain{
+    grid-area: main;
+    color: white;
+    width: 80%;
+  }
+  .tecnologiasMain h3{
+    text-align: center;
+    font-size: 24px ;
+    margin: 2rem;
+    position: relative;
+  }
+  .tecnologiasDivContainer{
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "img1 img2 img3 img4 img5"
+          "img6 img7 img8 img9 img10"
+  }
+  .tecnologiasMain div img{
+    width: 64px;
+    margin-right: 3rem;
+  }
+  .angular{
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aws{
+    grid-area: img2;
+  }
+  /** Contacto **/
+  .contactoMain{
+    grid-area: main;
+    width: 90%;
+    color: white;
+    font-size: large;
+  }
+  .contactoMain h2{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  /** Empleo **/
+  .empleoMain{
+    grid-area: main;
+    color: white;
+    margin:2rem;
+  }
+  .empleoMain h2{
+    text-align: center;
+  }
+  .empleoMain h3{
+    margin: 2rem;
+  }
+  .empleoMain h4{
+    margin: 2rem;
+  }
+  .empleoMain ul{
+    list-style: none;
+    margin: 2rem;
+  }
+
+ 

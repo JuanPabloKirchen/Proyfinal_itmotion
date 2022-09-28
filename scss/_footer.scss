@@ -1,0 +1,29 @@
+.footer{
+    grid-area: footer;
+    border-top: solid white 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul{
+        list-style: none;
+        color: white;
+        padding: 2rem;
+        li{
+            padding: 0.3rem;
+            a:active{ 
+            text-decoration: none; 
+            color: white;
+            }
+        }
+    }
+  }
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5rem;
+    justify-content: right;
+    column-gap: 3rem;
+  }
+ 
+
+
