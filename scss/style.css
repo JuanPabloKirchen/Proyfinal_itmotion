@@ -29,7 +29,7 @@
   border-top: solid white 2px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .footer ul {
   list-style: none;
@@ -43,14 +43,13 @@
   text-decoration: none;
   color: white;
 }
-
-.redes {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 5rem;
-  justify-content: right;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+.footer .redes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.footer .redes img {
+  margin: 2rem;
 }
 
 body {
