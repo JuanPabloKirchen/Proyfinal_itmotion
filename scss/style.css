@@ -48,11 +48,11 @@ body {
 }
 .footer .redes {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem;
 }
 .footer .redes img {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .indexMain {
@@ -91,8 +91,10 @@ body {
 .solucionesMain .imagenSoluciones {
   grid-area: imagen;
   margin-left: 2rem;
-  display: inline-block;
   border: solid white;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .solucionesMain p {
   grid-area: parrafo;
@@ -133,7 +135,6 @@ body {
   text-align: center;
   font-size: 24px;
   margin: 2rem;
-  position: relative;
 }
 .tecnologiasMain .tecnologiasDivContainer {
   display: flex;
@@ -141,12 +142,18 @@ body {
   flex-wrap: wrap;
   margin: 2rem;
 }
-.tecnologiasMain .tecnologiasDivContainer img {
+.tecnologiasMain .tecnologiasDivContainer div p {
+  text-align: center;
+  font-size: large;
+}
+.tecnologiasMain .tecnologiasDivContainer div img {
   width: 64px;
-  margin: 3rem;
+  border-radius: 5%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
 }
 
-/** Contacto **/
 .contactoMain {
   grid-area: main;
   font-size: large;

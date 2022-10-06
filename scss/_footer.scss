@@ -18,13 +18,15 @@
     }
     .redes{
       display: flex;
-      flex-wrap:wrap;     
-      padding: 1rem;
+      justify-content: space-between;
+      flex-wrap:wrap;
       img{
-        margin: 2rem;
+        margin: 1rem;
       }
     }
   }
+
+
 
  
 

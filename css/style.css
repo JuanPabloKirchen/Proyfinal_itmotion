@@ -40,10 +40,10 @@ body {
         color: #dcef30; }
   .footer .redes {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1rem; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .footer .redes img {
-      margin: 2rem; }
+      margin: 1rem; }
 
 .indexMain {
   grid-area: main;
@@ -109,18 +109,22 @@ body {
   .tecnologiasMain h3 {
     text-align: center;
     font-size: 24px;
-    margin: 2rem;
-    position: relative; }
+    margin: 2rem; }
   .tecnologiasMain .tecnologiasDivContainer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 2rem; }
-    .tecnologiasMain .tecnologiasDivContainer img {
+    .tecnologiasMain .tecnologiasDivContainer div p {
+      text-align: center;
+      font-size: large; }
+    .tecnologiasMain .tecnologiasDivContainer div img {
       width: 64px;
-      margin: 3rem; }
+      border-radius: 5%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 3rem; }
 
-/** Contacto **/
 .contactoMain {
   grid-area: main;
   font-size: large;

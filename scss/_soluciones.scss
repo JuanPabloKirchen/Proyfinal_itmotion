@@ -20,8 +20,8 @@
     .imagenSoluciones{
         grid-area: imagen;
         margin-left: 2rem;
-        display: inline-block;
         border: solid white;
+        max-width: fit-content;
       }
     p{
         grid-area: parrafo;
