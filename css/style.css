@@ -97,7 +97,7 @@ body {
 .tecnologiasMain {
   grid-area: main;
   color: white;
-  width: 80%; }
+  width: 90%; }
   .tecnologiasMain h3 {
     text-align: center;
     font-size: 24px;
@@ -118,26 +118,21 @@ body {
   width: 90%;
   color: white;
   font-size: large; }
-
-.contactoMain h2 {
-  text-align: center;
-  margin-top: 2rem; }
+  .contactoMain h2 {
+    text-align: center;
+    margin-top: 2rem; }
 
 /** Empleo **/
 .empleoMain {
   grid-area: main;
   color: white;
   margin: 2rem; }
-
-.empleoMain h2 {
-  text-align: center; }
-
-.empleoMain h3 {
-  margin: 2rem; }
-
-.empleoMain h4 {
-  margin: 2rem; }
-
-.empleoMain ul {
-  list-style: none;
-  margin: 2rem; }
+  .empleoMain h2 {
+    text-align: center; }
+  .empleoMain h3 {
+    margin: 2rem; }
+  .empleoMain h4 {
+    margin: 2rem; }
+  .empleoMain ul {
+    list-style: none;
+    margin: 2rem; }
