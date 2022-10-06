@@ -1,133 +1,19 @@
-/* reseteo CSS */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  .indexContenedor{
-    display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.3fr 1fr 0.5fr;
-      grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
 
-  }
-  @import "header";
-    
-  @import "footer";
-  body{
-  background-image: url(../assets/images/3430013.jpg);
-  /* por si la imagen no carga*/
-  background-color: #131335;
-  background-repeat: no-repeat;
-  background-position: right center;
-  /* esto para que la imagen cubra justo la pantalla */
-  background-size: cover;
-  }
-  $color: #dcef30;
+@import "variables";
 
-  @mixin lookFeelPagina($ancho,$colorLetra){
-    width: $ancho;
-    color: $colorLetra;
-  }
-  /** Index **/
-  .indexMain{
-    grid-area: main;
-    @include lookFeelPagina(90%,$color);
-    h2{
-      margin: 2rem;
-    }
-    p{
-      margin:2rem;
-      font-size: 20px;
-      line-height: 2rem;
-      font-style: italic;
-    }
-  }
-  /** Soluciones **/
-  .solucionesMain{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    @include lookFeelPagina(90%,$color);
-    h2{
-      text-align: center;
-      margin: 2rem;
-    }
-    p{
-      margin:2rem;
-      font-size: 20px;
-      line-height: 2rem;
-      font-style: italic;
-      display: inline-block;
-    }
-    .imagenSoluciones{
-      margin-left: 2rem;
-      display: inline-block;
-      border: solid white;
-      width: 45%;
-    }
-    .conocer{
-      color: white;
-      margin-left: 2rem;
-      padding: 10px;
-      text-decoration: underline;
-      display: inline-block;
-      &:hover{
-        color: yellow;
-        font-style: italic;
-      }
-    }
-  }
-  /** Tecnologias **/
-  .tecnologiasMain{
-    grid-area: main;
-    @include lookFeelPagina(90%,$color);
-    h3{
-      text-align: center;
-      font-size: 24px ;
-      margin: 2rem;
-      position: relative;
-    }
-    .tecnologiasDivContainer{
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: 2rem;
-      img{
-        width: 64px;
-        margin: 3rem;
-      }
-    }
-  }
-  /** Contacto **/
-  .contactoMain{
-    grid-area: main;
-    font-size: large;
-    @include lookFeelPagina(90%,$color);
-    h2{
-      text-align: center;
-      margin-top: 2rem;
-    }
-  }
-  /** Empleo **/
-  .empleoMain{
-    grid-area: main;
-    @include lookFeelPagina(90%,$color);
-    margin:2rem;
-    h2{
-      text-align: center;
-    }
-    h3{
-      margin: 2rem;
-    }
-    h4{
-      margin: 2rem;
-    }
-    ul{
-      list-style: none;
-      margin: 2rem;
-    }
-  }
+@import "general";
+
+@import "header";
+
+@import "footer";
+
+@import "index";
+
+@import "soluciones";
+
+@import "tecnologias";
+  
+@import "contacto";
+
+@import "empleo";
+  

@@ -1,15 +1,18 @@
-/* reseteo CSS */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 .indexContenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 1fr 0.5fr;
   grid-template-areas: "header header" "main main" "footer footer";
+}
+
+body {
+  background-image: url(../assets/images/3430013.jpg);
+  /* por si la imagen no carga*/
+  background-color: #131335;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* esto para que la imagen cubra justo la pantalla */
+  background-size: cover;
 }
 
 .estiloHeader {
@@ -19,7 +22,7 @@
   grid-area: header;
 }
 .estiloHeader h1 {
-  color: white;
+  color: #dcef30;
   display: inline;
   align-self: center;
 }
@@ -33,7 +36,7 @@
 }
 .footer ul {
   list-style: none;
-  color: white;
+  color: #dcef30;
   padding: 2rem;
 }
 .footer ul li {
@@ -41,7 +44,7 @@
 }
 .footer ul li a:active {
   text-decoration: none;
-  color: white;
+  color: #dcef30;
 }
 .footer .redes {
   display: flex;
@@ -52,21 +55,10 @@
   margin: 2rem;
 }
 
-body {
-  background-image: url(../assets/images/3430013.jpg);
-  /* por si la imagen no carga*/
-  background-color: #131335;
-  background-repeat: no-repeat;
-  background-position: right center;
-  /* esto para que la imagen cubra justo la pantalla */
-  background-size: cover;
-}
-
-/** Index **/
 .indexMain {
   grid-area: main;
-  width: 90%;
   color: #dcef30;
+  width: 90%;
 }
 .indexMain h2 {
   margin: 2rem;
@@ -78,13 +70,12 @@ body {
   font-style: italic;
 }
 
-/** Soluciones **/
 .solucionesMain {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  width: 90%;
   color: #dcef30;
+  width: 90%;
 }
 .solucionesMain h2 {
   text-align: center;
@@ -101,7 +92,6 @@ body {
   margin-left: 2rem;
   display: inline-block;
   border: solid white;
-  width: 45%;
 }
 .solucionesMain .conocer {
   color: white;
@@ -118,8 +108,8 @@ body {
 /** Tecnologias **/
 .tecnologiasMain {
   grid-area: main;
-  width: 90%;
   color: #dcef30;
+  width: 90%;
 }
 .tecnologiasMain h3 {
   text-align: center;
@@ -142,19 +132,18 @@ body {
 .contactoMain {
   grid-area: main;
   font-size: large;
-  width: 90%;
   color: #dcef30;
+  width: 90%;
 }
 .contactoMain h2 {
   text-align: center;
   margin-top: 2rem;
 }
 
-/** Empleo **/
 .empleoMain {
   grid-area: main;
-  width: 90%;
   color: #dcef30;
+  width: 90%;
   margin: 2rem;
 }
 .empleoMain h2 {

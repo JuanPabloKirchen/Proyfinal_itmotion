@@ -1,0 +1,10 @@
+/** Contacto **/
+.contactoMain{
+    grid-area: main;
+    font-size: large;
+    @include lookFeelPagina($color,90%);
+    h2{
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }

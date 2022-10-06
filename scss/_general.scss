@@ -1,0 +1,23 @@
+.indexContenedor{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr 0.5fr;
+      grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+  }
+  body{
+  background-image: url(../assets/images/3430013.jpg);
+  /* por si la imagen no carga*/
+  background-color: #131335;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* esto para que la imagen cubra justo la pantalla */
+  background-size: cover;
+  }
+
+  @mixin lookFeelPagina($colorLetra, $ancho:95%){
+    color: $colorLetra;
+    width: $ancho;
+  }

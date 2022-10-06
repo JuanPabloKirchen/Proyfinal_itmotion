@@ -1,0 +1,33 @@
+ .solucionesMain{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    @include lookFeelPagina($color,90%);
+    h2{
+      text-align: center;
+      margin: 2rem;
+    }
+    p{
+      margin:2rem;
+      font-size: 20px;
+      line-height: 2rem;
+      font-style: italic;
+      display: inline-block;
+    }
+    .imagenSoluciones{
+      margin-left: 2rem;
+      display: inline-block;
+      border: solid white;
+    }
+    .conocer{
+      color: white;
+      margin-left: 2rem;
+      padding: 10px;
+      text-decoration: underline;
+      display: inline-block;
+      &:hover{
+        color: yellow;
+        font-style: italic;
+      }
+    }
+  }

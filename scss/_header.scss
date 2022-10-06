@@ -1,10 +1,10 @@
 .estiloHeader{
-    background-color: #131335;
+    background-color: $fondoHeader;
     border-bottom: solid white 2px;
     font-size: 20px;
     grid-area: header;
     h1{
-        color: white;
+        color: $colorTextoHeader;
         display: inline;
         align-self: center;
     }

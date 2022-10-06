@@ -1,0 +1,21 @@
+/** Tecnologias **/
+.tecnologiasMain{
+    grid-area: main;
+    @include lookFeelPagina($color,90%);
+    h3{
+      text-align: center;
+      font-size: 24px ;
+      margin: 2rem;
+      position: relative;
+    }
+    .tecnologiasDivContainer{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 2rem;
+      img{
+        width: 64px;
+        margin: 3rem;
+      }
+    }
+  }
