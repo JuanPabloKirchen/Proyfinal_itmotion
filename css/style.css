@@ -54,7 +54,8 @@ body {
 /** Index **/
 .indexMain {
   grid-area: main;
-  color: white; }
+  width: 90%;
+  color: #dcef30; }
   .indexMain h2 {
     margin: 2rem; }
   .indexMain p {
@@ -63,12 +64,13 @@ body {
     line-height: 2rem;
     font-style: italic; }
 
-/* ------- Soluciones ------*/
+/** Soluciones **/
 .solucionesMain {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  color: white; }
+  width: 90%;
+  color: #dcef30; }
   .solucionesMain h2 {
     text-align: center;
     margin: 2rem; }
@@ -93,11 +95,11 @@ body {
       color: yellow;
       font-style: italic; }
 
-/* ---- Tecnologias -------*/
+/** Tecnologias **/
 .tecnologiasMain {
   grid-area: main;
-  color: white;
-  width: 90%; }
+  width: 90%;
+  color: #dcef30; }
   .tecnologiasMain h3 {
     text-align: center;
     font-size: 24px;
@@ -115,9 +117,9 @@ body {
 /** Contacto **/
 .contactoMain {
   grid-area: main;
+  font-size: large;
   width: 90%;
-  color: white;
-  font-size: large; }
+  color: #dcef30; }
   .contactoMain h2 {
     text-align: center;
     margin-top: 2rem; }
@@ -125,7 +127,8 @@ body {
 /** Empleo **/
 .empleoMain {
   grid-area: main;
-  color: white;
+  width: 90%;
+  color: #dcef30;
   margin: 2rem; }
   .empleoMain h2 {
     text-align: center; }

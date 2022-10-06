@@ -65,7 +65,8 @@ body {
 /** Index **/
 .indexMain {
   grid-area: main;
-  color: white;
+  width: 90%;
+  color: #dcef30;
 }
 .indexMain h2 {
   margin: 2rem;
@@ -77,12 +78,13 @@ body {
   font-style: italic;
 }
 
-/* ------- Soluciones ------*/
+/** Soluciones **/
 .solucionesMain {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  color: white;
+  width: 90%;
+  color: #dcef30;
 }
 .solucionesMain h2 {
   text-align: center;
@@ -113,11 +115,11 @@ body {
   font-style: italic;
 }
 
-/* ---- Tecnologias -------*/
+/** Tecnologias **/
 .tecnologiasMain {
   grid-area: main;
-  color: white;
-  width: 80%;
+  width: 90%;
+  color: #dcef30;
 }
 .tecnologiasMain h3 {
   text-align: center;
@@ -127,33 +129,22 @@ body {
 }
 .tecnologiasMain .tecnologiasDivContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 2rem;
 }
 .tecnologiasMain .tecnologiasDivContainer img {
   width: 64px;
-  margin-right: 3rem;
-}
-
-.angular {
-  grid-area: img1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aws {
-  grid-area: img2;
+  margin: 3rem;
 }
 
 /** Contacto **/
 .contactoMain {
   grid-area: main;
-  width: 90%;
-  color: white;
   font-size: large;
+  width: 90%;
+  color: #dcef30;
 }
-
 .contactoMain h2 {
   text-align: center;
   margin-top: 2rem;
@@ -162,22 +153,19 @@ body {
 /** Empleo **/
 .empleoMain {
   grid-area: main;
-  color: white;
+  width: 90%;
+  color: #dcef30;
   margin: 2rem;
 }
-
 .empleoMain h2 {
   text-align: center;
 }
-
 .empleoMain h3 {
   margin: 2rem;
 }
-
 .empleoMain h4 {
   margin: 2rem;
 }
-
 .empleoMain ul {
   list-style: none;
   margin: 2rem;

@@ -26,10 +26,16 @@
   /* esto para que la imagen cubra justo la pantalla */
   background-size: cover;
   }
+  $color: #dcef30;
+
+  @mixin lookFeelPagina($ancho,$colorLetra){
+    width: $ancho;
+    color: $colorLetra;
+  }
   /** Index **/
   .indexMain{
     grid-area: main;
-    color: white;
+    @include lookFeelPagina(90%,$color);
     h2{
       margin: 2rem;
     }
@@ -40,12 +46,12 @@
       font-style: italic;
     }
   }
-  /* ------- Soluciones ------*/
+  /** Soluciones **/
   .solucionesMain{
     grid-area: main;
     display: flex;
     flex-direction: column;
-    color: white;
+    @include lookFeelPagina(90%,$color);
     h2{
       text-align: center;
       margin: 2rem;
@@ -75,11 +81,10 @@
       }
     }
   }
-  /* ---- Tecnologias -------*/
+  /** Tecnologias **/
   .tecnologiasMain{
     grid-area: main;
-    color: white;
-    width: 90%;
+    @include lookFeelPagina(90%,$color);
     h3{
       text-align: center;
       font-size: 24px ;
@@ -100,9 +105,8 @@
   /** Contacto **/
   .contactoMain{
     grid-area: main;
-    width: 90%;
-    color: white;
     font-size: large;
+    @include lookFeelPagina(90%,$color);
     h2{
       text-align: center;
       margin-top: 2rem;
@@ -111,7 +115,7 @@
   /** Empleo **/
   .empleoMain{
     grid-area: main;
-    color: white;
+    @include lookFeelPagina(90%,$color);
     margin:2rem;
     h2{
       text-align: center;
