@@ -55,76 +55,62 @@ body {
 .indexMain {
   grid-area: main;
   color: white; }
-
-.indexMain h2 {
-  margin: 2rem; }
-
-.indexMain p {
-  margin: 2rem;
-  font-size: 20px;
-  line-height: 2rem;
-  font-style: italic; }
+  .indexMain h2 {
+    margin: 2rem; }
+  .indexMain p {
+    margin: 2rem;
+    font-size: 20px;
+    line-height: 2rem;
+    font-style: italic; }
 
 /* ------- Soluciones ------*/
 .solucionesMain {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
   color: white; }
-
-.pSoluciones {
-  margin: 2rem;
-  font-size: 20px;
-  line-height: 2rem;
-  font-style: italic;
-  width: 40%;
-  display: inline-block; }
-
-.imagenSoluciones {
-  margin-left: 2rem;
-  display: inline-block;
-  border: solid white;
-  width: 45%; }
-
-.conocer {
-  color: white;
-  margin-left: 2rem;
-  padding: 10px;
-  text-decoration: underline;
-  display: inline-block; }
-
-.conocer:hover {
-  color: yellow;
-  background-color: #131335; }
+  .solucionesMain h2 {
+    text-align: center;
+    margin: 2rem; }
+  .solucionesMain p {
+    margin: 2rem;
+    font-size: 20px;
+    line-height: 2rem;
+    font-style: italic;
+    display: inline-block; }
+  .solucionesMain .imagenSoluciones {
+    margin-left: 2rem;
+    display: inline-block;
+    border: solid white;
+    width: 45%; }
+  .solucionesMain .conocer {
+    color: white;
+    margin-left: 2rem;
+    padding: 10px;
+    text-decoration: underline;
+    display: inline-block; }
+    .solucionesMain .conocer:hover {
+      color: yellow;
+      font-style: italic; }
 
 /* ---- Tecnologias -------*/
 .tecnologiasMain {
   grid-area: main;
   color: white;
   width: 80%; }
-
-.tecnologiasMain h3 {
-  text-align: center;
-  font-size: 24px;
-  margin: 2rem;
-  position: relative; }
-
-.tecnologiasDivContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "img1 img2 img3 img4 img5" "img6 img7 img8 img9 img10"; }
-
-.tecnologiasMain div img {
-  width: 64px;
-  margin-right: 3rem; }
-
-.angular {
-  grid-area: img1;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.aws {
-  grid-area: img2; }
+  .tecnologiasMain h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 2rem;
+    position: relative; }
+  .tecnologiasMain .tecnologiasDivContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem; }
+    .tecnologiasMain .tecnologiasDivContainer img {
+      width: 64px;
+      margin: 3rem; }
 
 /** Contacto **/
 .contactoMain {
