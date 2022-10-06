@@ -63,28 +63,43 @@ body {
   flex-direction: column;
   color: #dcef30;
   width: 90%; }
+  .solucionesMain .solucionesGrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.3fr;
+    grid-template-areas: "titulo titulo" "imagen parrafo" "conocer conocer"; }
   .solucionesMain h2 {
+    grid-area: titulo;
     text-align: center;
     margin: 2rem; }
+  .solucionesMain .imagenSoluciones {
+    grid-area: imagen;
+    margin-left: 2rem;
+    display: inline-block;
+    border: solid white; }
   .solucionesMain p {
+    grid-area: parrafo;
     margin: 2rem;
     font-size: 20px;
     line-height: 2rem;
     font-style: italic;
     display: inline-block; }
-  .solucionesMain .imagenSoluciones {
-    margin-left: 2rem;
-    display: inline-block;
-    border: solid white; }
   .solucionesMain .conocer {
-    color: white;
+    grid-area: conocer;
+    color: #dcef30;
     margin-left: 2rem;
     padding: 10px;
     text-decoration: underline;
     display: inline-block; }
     .solucionesMain .conocer:hover {
-      color: yellow;
+      color: #ee82ee;
       font-style: italic; }
+  @media screen and (max-width: 1024px) {
+    .solucionesMain .solucionesGrilla {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 0.3fr;
+      grid-template-areas: "titulo" "imagen" "parrafo" "conocer"; } }
 
 /** Tecnologias **/
 .tecnologiasMain {

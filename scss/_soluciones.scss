@@ -3,31 +3,57 @@
     display: flex;
     flex-direction: column;
     @include lookFeelPagina($color,90%);
+    .solucionesGrilla{
+        display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 0.5fr 1fr 0.3fr;
+          grid-template-areas: 
+            "titulo titulo"
+            "imagen parrafo"
+            "conocer conocer"
+      }
     h2{
-      text-align: center;
-      margin: 2rem;
-    }
-    p{
-      margin:2rem;
-      font-size: 20px;
-      line-height: 2rem;
-      font-style: italic;
-      display: inline-block;
+        grid-area: titulo;
+        text-align: center;
+        margin: 2rem;
     }
     .imagenSoluciones{
-      margin-left: 2rem;
-      display: inline-block;
-      border: solid white;
+        grid-area: imagen;
+        margin-left: 2rem;
+        display: inline-block;
+        border: solid white;
+      }
+    p{
+        grid-area: parrafo;
+         margin:2rem;
+        font-size: 20px;
+        line-height: 2rem;
+        font-style: italic;
+        display: inline-block;
     }
     .conocer{
-      color: white;
-      margin-left: 2rem;
-      padding: 10px;
-      text-decoration: underline;
-      display: inline-block;
-      &:hover{
-        color: yellow;
-        font-style: italic;
-      }
+        grid-area: conocer;
+        color: $colorConocer;
+        margin-left: 2rem;
+        padding: 10px;
+        text-decoration: underline;
+        display: inline-block;
+        &:hover{
+            color: $colorConocerHover;
+            font-style: italic;
+        }
     }
+    @media screen and (max-width: 1024px){
+        .solucionesGrilla{
+            display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 0.5fr 1fr 1fr 0.3fr;
+              grid-template-areas: 
+                "titulo"
+                "imagen"
+                "parrafo"
+                "conocer"
+          }
+      }
   }
+
