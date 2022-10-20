@@ -22,6 +22,9 @@ body {
     color: #dcef30;
     display: inline;
     align-self: center; }
+  @media screen and (max-width: 350px) {
+    .estiloHeader h1 {
+      font-size: 20px; } }
 
 .footer {
   grid-area: footer;
@@ -52,10 +55,14 @@ body {
   .indexMain h2 {
     margin: 2rem; }
   .indexMain p {
-    margin: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
     font-size: 20px;
     line-height: 2rem;
     font-style: italic; }
+  @media screen and (max-width: 350px) {
+    .indexMain p {
+      font-size: 16px; } }
 
 .solucionesMain {
   grid-area: main;
@@ -75,8 +82,9 @@ body {
   .solucionesMain .imagenSoluciones {
     grid-area: imagen;
     margin-left: 2rem;
-    display: inline-block;
-    border: solid white; }
+    border: solid white;
+    width: 90%;
+    max-width: fit-content; }
   .solucionesMain p {
     grid-area: parrafo;
     margin: 2rem;
@@ -98,8 +106,16 @@ body {
     .solucionesMain .solucionesGrilla {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr 1fr 0.3fr;
-      grid-template-areas: "titulo" "imagen" "parrafo" "conocer"; } }
+      grid-template-rows: 0.2fr 0.7fr 1fr 0.2fr;
+      grid-template-areas: "titulo" "imagen" "parrafo" "conocer"; }
+    .solucionesMain .imagenSoluciones {
+      border: solid white;
+      width: 100%;
+      justify-content: first baseline;
+      align-items: center; }
+    .solucionesMain p {
+      margin: 0.5rem;
+      font-size: 16px; } }
 
 /** Tecnologias **/
 .tecnologiasMain {

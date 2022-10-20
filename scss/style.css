@@ -92,6 +92,7 @@ body {
   grid-area: imagen;
   margin-left: 2rem;
   border: solid white;
+  width: 90%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
