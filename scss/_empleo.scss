@@ -12,7 +12,21 @@
       margin: 2rem;
     }
     ul{
-      list-style: none;
+      list-style:circle;
       margin: 2rem;
+    }
+    @media screen and (max-width: 350px){
+      h3{
+        margin-left: 0.5rem;
+        font-size: 18px;
+      }
+      h4{
+        margin-left: 0.5rem;
+        font-size: 16px;
+      }
+      ul{
+          margin-left: 0.5rem;
+          font-size: 16px;
+      }
     }
   }

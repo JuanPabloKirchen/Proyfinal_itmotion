@@ -5,7 +5,7 @@
   grid-template-areas: "header header" "main main" "footer footer"; }
 
 body {
-  background-image: url(../assets/images/3430013.jpg);
+  background-image: url(../assets/images/bg-main.jpg);
   /* por si la imagen no carga*/
   background-color: #131335;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
   font-size: 20px;
   grid-area: header; }
   .estiloHeader h1 {
-    color: #dcef30;
+    color: #F8F8FF;
     display: inline;
     align-self: center; }
   @media screen and (max-width: 350px) {
@@ -34,13 +34,13 @@ body {
   flex-wrap: nowrap; }
   .footer ul {
     list-style: none;
-    color: #dcef30;
+    color: #F8F8FF;
     padding: 2rem; }
     .footer ul li {
       padding: 0.3rem; }
       .footer ul li a:active {
         text-decoration: none;
-        color: #dcef30; }
+        color: #F8F8FF; }
   .footer .redes {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 
 .indexMain {
   grid-area: main;
-  color: #dcef30;
+  color: #F8F8FF;
   width: 90%; }
   .indexMain h2 {
     margin: 2rem; }
@@ -68,7 +68,7 @@ body {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  color: #dcef30;
+  color: #F8F8FF;
   width: 90%; }
   .solucionesMain .solucionesGrilla {
     display: grid;
@@ -94,7 +94,7 @@ body {
     display: inline-block; }
   .solucionesMain .conocer {
     grid-area: conocer;
-    color: #dcef30;
+    color: #F8F8FF;
     margin-left: 2rem;
     padding: 10px;
     text-decoration: underline;
@@ -111,7 +111,7 @@ body {
     .solucionesMain .imagenSoluciones {
       border: solid white;
       width: 100%;
-      margin: 1rem,3rem; }
+      margin: 1rem,3rem,1rem; }
     .solucionesMain p {
       font-size: 16px;
       text-align: center; } }
@@ -119,7 +119,7 @@ body {
 /** Tecnologias **/
 .tecnologiasMain {
   grid-area: main;
-  color: #dcef30;
+  color: #F8F8FF;
   width: 90%; }
   .tecnologiasMain h3 {
     text-align: center;
@@ -143,7 +143,7 @@ body {
 .contactoMain {
   grid-area: main;
   font-size: large;
-  color: #dcef30;
+  color: #F8F8FF;
   width: 90%; }
   .contactoMain h2 {
     text-align: center;
@@ -151,7 +151,7 @@ body {
 
 .empleoMain {
   grid-area: main;
-  color: #dcef30;
+  color: #F8F8FF;
   width: 90%;
   margin: 2rem; }
   .empleoMain h2 {
@@ -161,5 +161,15 @@ body {
   .empleoMain h4 {
     margin: 2rem; }
   .empleoMain ul {
-    list-style: none;
+    list-style: circle;
     margin: 2rem; }
+  @media screen and (max-width: 350px) {
+    .empleoMain h3 {
+      margin-left: 0.5rem;
+      font-size: 18px; }
+    .empleoMain h4 {
+      margin-left: 0.5rem;
+      font-size: 16px; }
+    .empleoMain ul {
+      margin-left: 0.5rem;
+      font-size: 16px; } }
