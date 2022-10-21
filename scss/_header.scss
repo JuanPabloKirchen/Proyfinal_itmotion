@@ -8,6 +8,9 @@
         display: inline;
         align-self: center;
     }
+    .navbar-toggler-icon{
+        filter: invert(100%);
+    }
     @media screen and (max-width: 350px){
         h1{
             font-size: 20px;
